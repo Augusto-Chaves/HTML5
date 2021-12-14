@@ -70,7 +70,6 @@
         divDrop.addEventListener('drop', e => {
 
             const elementId = event.dataTransfer.getData("Text");
-
             const element = document.getElementById(elementId);
 
             e.target.appendChild(element);
