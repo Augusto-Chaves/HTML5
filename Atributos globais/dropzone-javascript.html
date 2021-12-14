@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ponto de largada</title>
+
     <style>
     .box {
         background-color: chocolate;
@@ -21,18 +25,22 @@
         height: 300px;
     }
     </style>
+
 </head>
+
 <body>
 
     <div class="drop" dropzone="copy">
         <div id="box-1" class="box" draggable="true"></div>
         <div id="box-2" class="box" draggable="true"></div>
     </div>
+
     <div class="drop" dropzone="copy"></div>
 
     <script>
 
     const divsBox = document.querySelectorAll('.box');
+
     const divsDrop = document.querySelectorAll('.drop');
 
     divsBox.forEach(divBox => {
@@ -56,6 +64,7 @@
         divDrop.addEventListener('drop', e => {
 
             const elementId = event.dataTransfer.getData("Text");
+
             const element = document.getElementById(elementId);
 
             e.target.appendChild(element);
@@ -67,4 +76,5 @@
     </script>
     
 </body>
+
 </html>
