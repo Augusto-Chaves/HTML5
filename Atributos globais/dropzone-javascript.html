@@ -11,20 +11,24 @@
     <title> Atributo Global - Ponto de largada - Hcode</title>
 
     <style>
-    .box {
-        background-color: chocolate;
-        width: 100px;
-        height: 100px;
-    }
-    #box-2 {
-        background-color: blueviolet;
-    }
-    .drop {
-        background-color: blanchedalmond;
-        border: 2px dashed cadetblue;
-        width: 300px;
-        height: 300px;
-    }
+
+        .box {
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+        }
+
+        #box-2 {
+            background-color: blueviolet;
+        }
+
+        .drop {
+            background-color: blanchedalmond;
+            border: 2px dashed cadetblue;
+            width: 300px;
+            height: 300px;
+        }
+
     </style>
 
 </head>
@@ -32,8 +36,10 @@
 <body>
 
     <div class="drop" dropzone="copy">
+
         <div id="box-1" class="box" draggable="true"></div>
         <div id="box-2" class="box" draggable="true"></div>
+
     </div>
 
     <div class="drop" dropzone="copy"></div>
@@ -41,7 +47,6 @@
     <script>
 
     const divsBox = document.querySelectorAll('.box');
-
     const divsDrop = document.querySelectorAll('.drop');
 
     divsBox.forEach(divBox => {
